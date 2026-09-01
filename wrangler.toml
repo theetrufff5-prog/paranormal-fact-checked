@@ -1,7 +1,17 @@
 name = "paranormal-fact-checked"
+main = "src/index.js"
 compatibility_date = "2026-08-24"
 workers_dev = true
 
 [assets]
 directory = "./public"
+binding = "ASSETS"
 html_handling = "auto-trailing-slash"
+
+[[durable_objects.bindings]]
+name = "VISITOR_COUNTER"
+class_name = "VisitCounter"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["VisitCounter"]
