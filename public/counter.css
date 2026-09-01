@@ -1,0 +1,30 @@
+.header-counter {
+  margin-left: auto;
+  margin-right: clamp(14px, 3vw, 34px);
+  padding: 9px 12px;
+  border: 1px solid #29323c;
+  color: #aab3bb;
+  font: 800 10px/1 Consolas, "Courier New", monospace;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+
+.header-counter strong,
+.visitor-counter strong {
+  margin-left: 7px;
+  color: #ef4045;
+  font-size: 13px;
+}
+
+@media (max-width: 620px) {
+  .header-counter {
+    margin-left: auto;
+    margin-right: 0;
+    padding: 8px 9px;
+    font-size: 9px;
+  }
+
+  .site-header nav {
+    display: none;
+  }
+}

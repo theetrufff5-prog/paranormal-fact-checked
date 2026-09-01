@@ -1,6 +1,12 @@
 (() => {
-  const output = document.querySelector("[data-visitor-count]");
-  if (!output) return;
+  const outputs = document.querySelectorAll("[data-visitor-count]");
+  if (!outputs.length) return;
+
+  function show(value) {
+    outputs.forEach((output) => {
+      output.textContent = value;
+    });
+  }
 
   fetch("/api/visits", { method: "POST", cache: "no-store" })
     .then((response) => {
@@ -8,9 +14,9 @@
       return response.json();
     })
     .then(({ count }) => {
-      output.textContent = Number(count).toLocaleString();
+      show(Number(count).toLocaleString());
     })
     .catch(() => {
-      output.textContent = "—";
+      show("—");
     });
 })();
