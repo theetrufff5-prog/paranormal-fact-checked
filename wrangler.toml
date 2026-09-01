@@ -1,0 +1,7 @@
+name = "paranormal-fact-checked"
+compatibility_date = "2026-08-24"
+workers_dev = true
+
+[assets]
+directory = "./public"
+html_handling = "auto-trailing-slash"
