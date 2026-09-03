@@ -2,6 +2,7 @@
   const records = [
     { title: "Eastern State Penitentiary", location: "Philadelphia, Pennsylvania", tags: "prison penitentiary isolation apparitions voices ghost hunters ghost adventures paranormal lockdown buzzfeed unsolved", summary: "Documented prison history, reported experiences, and television investigations.", url: "eastern-state-penitentiary.html" },
     { title: "The Cecil Hotel", location: "Los Angeles, California", tags: "hotel elisa lam richard ramirez jack unterweger amy price deaths paranormal television ghost adventures", summary: "Dark history, unsupported claims, and the official finding in Elisa Lam’s death.", url: "cecil-hotel.html" },
+    { title: "The Jersey Devil", location: "Pine Barrens, New Jersey", tags: "jersey devil monster myth legend mr demaio youtube video cryptid", summary: "A featured outside video introducing the Jersey Devil legend.", url: "index.html#featured-video-4" },
     { title: "Our Evidence Method", location: "How we fact-check", tags: "method evidence sources claims assessment verified unproven fact check", summary: "How accounts become evidence-led case assessments.", url: "index.html#method" },
     { title: "Share an Experience", location: "Reader submissions", tags: "submit story encounter photo video audio witness contact", summary: "Tell the editorial team what happened and what evidence you have.", url: "index.html#submit" }
   ];
