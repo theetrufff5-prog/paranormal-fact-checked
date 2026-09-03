@@ -16,8 +16,10 @@
     </button>
     <section class="archivist-panel" id="archivist-panel" hidden>
       <button class="archivist-close" type="button" aria-label="Close The Archivist">×</button>
-      <p class="archivist-kicker">THE ARCHIVIST / SITE GUIDE</p>
-      <h2>How can I help you?</h2>
+      <header class="archivist-conversation">
+        <img src="the-archivist.png" alt="The Archivist, your ghost librarian guide" width="92" height="138">
+        <div><p class="archivist-kicker">THE ARCHIVIST / SITE GUIDE</p><h2>How can I help you?</h2></div>
+      </header>
       <form class="archivist-search" role="search">
         <label for="archivist-query">Search cases, places, claims, or TV shows</label>
         <div><input id="archivist-query" type="search" autocomplete="off" placeholder="Try: Cecil Hotel or prison"><button type="submit">SEARCH</button></div>
