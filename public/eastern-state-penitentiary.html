@@ -65,7 +65,7 @@
       <section class="comments-section" data-comments="eastern-state-penitentiary" aria-labelledby="comments-title">
         <div class="section-heading"><p class="kicker">/ COMMUNITY REMARKS</p><h2 id="comments-title">Join the discussion</h2><p>Good or bad, respectful remarks are welcome. Published comments are opinions—not verified evidence.</p></div>
         <div class="comments-layout">
-          <form class="comment-form"><label>Display name<input name="name" maxlength="40" required autocomplete="name"></label><label>Your remark<textarea name="body" maxlength="800" rows="6" required></textarea></label><label class="comment-trap" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label><button class="button primary" type="submit">SUBMIT FOR REVIEW</button><p class="form-message" data-comment-message aria-live="polite"></p><small>Comments appear only after editorial approval. Critique claims and evidence—not other commenters. Threats, spam, private information, discriminatory abuse, and unverified personal accusations will not be published.</small></form>
+          <form class="comment-form"><label>Display name<input name="name" maxlength="40" required autocomplete="name"></label><label>Your remark<textarea name="body" maxlength="800" rows="6" required></textarea></label><label class="comment-trap" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label><div class="cf-turnstile" data-sitekey="0x4AAAAAAEmHKt7T6v89S5Vj" data-theme="dark"></div><button class="button primary" type="submit">SUBMIT FOR REVIEW</button><p class="form-message" data-comment-message aria-live="polite"></p><small>Comments appear only after editorial approval. Critique claims and evidence—not other commenters. Threats, spam, private information, discriminatory abuse, and unverified personal accusations will not be published.</small></form>
           <div class="comment-list" data-comment-list><p class="comments-empty">Loading remarks…</p></div>
         </div>
       </section>
@@ -73,6 +73,7 @@
   </main>
   <footer><b>PARANORMAL: FACT CHECKED</b><a class="back-link" href="index.html">HOME</a><span>Independent • Evidence-led • © 2026</span></footer>
   <script src="comments.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"26ef145959cd47f4a641ab839c5bd28e"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

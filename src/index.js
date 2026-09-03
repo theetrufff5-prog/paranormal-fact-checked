@@ -19,6 +19,16 @@ async function clientKey(request) {
   return [...new Uint8Array(digest)].slice(0, 12).map((byte) => byte.toString(16).padStart(2, "0")).join("");
 }
 
+async function verifyTurnstile(token, secret, remoteip) {
+  if (!token || !secret) return false;
+  const body = new FormData();
+  body.append("secret", secret); body.append("response", token); body.append("remoteip", remoteip);
+  const response = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", { method: "POST", body });
+  if (!response.ok) return false;
+  const result = await response.json();
+  return result.success === true;
+}
+
 export class VisitCounter {
   constructor(state) { this.state = state; }
 
@@ -70,6 +80,9 @@ export class CommentStore {
       const name = normalizeText(input.name, 40);
       const body = normalizeText(input.body, 800);
       if (!CASES.has(caseId) || name.length < 2 || body.length < 3) return json({ error: "Please provide a display name and comment." }, 400);
+
+      const address = request.headers.get("cf-connecting-ip") || "unknown";
+      if (!await verifyTurnstile(input.turnstileToken, this.env.TURNSTILE_SECRET, address)) return json({ error: "Human verification failed. Please try again." }, 403);
 
       const client = await clientKey(request);
       const bucket = Math.floor(Date.now() / 600000);

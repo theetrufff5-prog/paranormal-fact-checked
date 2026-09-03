@@ -32,12 +32,12 @@
     button.disabled = true; message.textContent = "Submitting…";
     const data = new FormData(form);
     try {
-      const response = await fetch("/api/comments", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ caseId, name: data.get("name"), body: data.get("body"), website: data.get("website") }) });
+      const response = await fetch("/api/comments", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ caseId, name: data.get("name"), body: data.get("body"), website: data.get("website"), turnstileToken: data.get("cf-turnstile-response") }) });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || "Submission failed.");
       form.reset(); message.textContent = "Thank you. Your remark is awaiting editorial review.";
     } catch (error) { message.textContent = error.message; }
-    finally { button.disabled = false; }
+    finally { if (window.turnstile) window.turnstile.reset(); button.disabled = false; }
   });
 
   list.addEventListener("click", async (event) => {
