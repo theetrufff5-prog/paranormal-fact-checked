@@ -1,0 +1,30 @@
+name: Validate site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Check JavaScript syntax
+        run: |
+          node --check src/index.js
+          node --check public/comments.js
+          node --check public/moderate-comments.js
+      - name: Verify Cloudflare build
+        run: pnpm exec wrangler deploy --dry-run
