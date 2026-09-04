@@ -1,5 +1,6 @@
 (() => {
   const records = [
+    { title: "The Most Haunted Item In The World Shakes Zak", location: "Deadly Possessions video uploaded by Love Medical", tags: "haunted item object zak deadly possessions love medical youtube video", summary: "A Deadly Possessions clip featuring Zak; claims awaiting review.", url: "index.html#featured-video-6" },
     { title: "The Dybbuk Box", location: "Featured video by The Tape Library", tags: "dybbuk dibbuk box haunted object tape library youtube video", summary: "A video about the Dybbuk Box from The Tape Library; claims awaiting review.", url: "index.html#featured-video-5" },
     { title: "Eastern State Penitentiary", location: "Philadelphia, Pennsylvania", tags: "prison penitentiary isolation apparitions voices ghost hunters ghost adventures paranormal lockdown buzzfeed unsolved", summary: "Documented prison history, reported experiences, and television investigations.", url: "eastern-state-penitentiary.html" },
     { title: "The Cecil Hotel", location: "Los Angeles, California", tags: "hotel elisa lam richard ramirez jack unterweger amy price deaths paranormal television ghost adventures", summary: "Dark history, unsupported claims, and the official finding in Elisa Lam’s death.", url: "cecil-hotel.html" },
