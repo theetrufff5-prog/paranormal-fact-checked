@@ -1,5 +1,6 @@
 (() => {
   const records = [
+    { title: "The Dybbuk Box", location: "Featured video by The Tape Library", tags: "dybbuk dibbuk box haunted object tape library youtube video", summary: "A video about the Dybbuk Box from The Tape Library; claims awaiting review.", url: "index.html#featured-video-5" },
     { title: "Eastern State Penitentiary", location: "Philadelphia, Pennsylvania", tags: "prison penitentiary isolation apparitions voices ghost hunters ghost adventures paranormal lockdown buzzfeed unsolved", summary: "Documented prison history, reported experiences, and television investigations.", url: "eastern-state-penitentiary.html" },
     { title: "The Cecil Hotel", location: "Los Angeles, California", tags: "hotel elisa lam richard ramirez jack unterweger amy price deaths paranormal television ghost adventures", summary: "Dark history, unsupported claims, and the official finding in Elisa Lam’s death.", url: "cecil-hotel.html" },
     { title: "The Amityville Horror", location: "Amityville, New York", tags: "amityville defeo lutz ocean avenue murders haunting hoax warrens ed lorraine book movie television", summary: "The documented murders separated from disputed haunting claims and screen fiction.", url: "amityville-horror.html" },
