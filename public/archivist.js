@@ -1,5 +1,6 @@
 (() => {
   const records = [
+    { title: "Goatman's Bridge", location: "Denton County, Texas", tags: "old alton bridge goatman oscar washburn denton ghost adventures route 666", summary: "Historic bridge facts separated from an unsupported origin story and paranormal claims.", url: "goatmans-bridge.html" },
     { title: "Hotel Monte Vista", location: "Flagstaff, Arizona", tags: "hotel monte vista flagstaff room 305 220 306 bellboy rocking chair meat man ghosts haunted", summary: "Documented hotel history separated from unverified haunting claims.", url: "hotel-monte-vista.html" },
     { title: "The Most Haunted Item In The World Shakes Zak", location: "Deadly Possessions video uploaded by Love Medical", tags: "haunted item object zak deadly possessions love medical youtube video", summary: "A Deadly Possessions clip featuring Zak; claims awaiting review.", url: "index.html#featured-video-6" },
     { title: "The Dybbuk Box", location: "Featured video by The Tape Library", tags: "dybbuk dibbuk box haunted object tape library youtube video", summary: "A video about the Dybbuk Box from The Tape Library; claims awaiting review.", url: "index.html#featured-video-5" },
