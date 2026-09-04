@@ -1,5 +1,5 @@
 const JSON_HEADERS = { "cache-control": "no-store", "content-type": "application/json; charset=utf-8" };
-const CASES = new Set(["eastern-state-penitentiary", "cecil-hotel", "amityville-horror", "bermuda-triangle"]);
+const CASES = new Set(["eastern-state-penitentiary", "cecil-hotel", "amityville-horror", "bermuda-triangle", "hotel-monte-vista"]);
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), { status, headers: JSON_HEADERS });
