@@ -30,3 +30,6 @@ footer { flex-wrap: wrap; }
 .production-credit { flex: 0 0 100%; width: 100%; text-align: center; padding: 28px 0 150px; border-top: 1px solid var(--line); }
 .production-credit p { margin: 0 0 16px; color: var(--paper); font: 700 13px var(--mono); letter-spacing: .06em; }
 .production-credit img { display: block; width: min(240px, 100%); height: 220px; object-fit: cover; object-position: center 42%; margin: 0 auto; border-radius: 6px; }
+
+.production-contact { display: block; width: min(240px, 100%); margin: 0 auto; border-radius: 6px; }
+.production-contact:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
